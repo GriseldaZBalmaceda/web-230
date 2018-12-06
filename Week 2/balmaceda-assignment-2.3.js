@@ -4,7 +4,7 @@
 ; Author: Professor Krasso 
 ; Date:   5 December 2018
 ; Modified By: Griselda Balmaceda
-; Description: Demonstrates how to define and call property functions
+; Description: Demonstrates how to implement property functions
 ;===========================================
 */
 const header = require('../header.js');
