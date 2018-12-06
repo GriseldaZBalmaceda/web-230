@@ -13,6 +13,7 @@ console.log(header.display("Griselda", "Balmaceda", "Week 2"));
 
 myName.griselda="Griselda"
 
+
 function myName(){
 
 return myName.griselda;

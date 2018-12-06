@@ -32,6 +32,6 @@ function convertToInt(){
 
 }
 
-
+console.log('\n')
 console.log('Hello my name is '+ myName('Griselda','Balmaceda')+'!')
 console.log("Today's date is "+ dateWriter(2018,6,12) + " and the current temperature is 33.5 degrees.")
