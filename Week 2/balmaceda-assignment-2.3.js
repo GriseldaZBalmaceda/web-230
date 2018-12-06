@@ -11,9 +11,11 @@ const header = require('../header.js');
 
 console.log(header.display("Griselda", "Balmaceda", "Week 2"));
 
+myName.griselda="Griselda"
 
 function myName(){
-myName.griselda="Griselda Balmaceda"
+
 return myName.griselda;
 }
-console.log("Hello " + myName() +'!')
+console.log("\n")
+console.log("Hello " + myName() +' Balmaceda!')
