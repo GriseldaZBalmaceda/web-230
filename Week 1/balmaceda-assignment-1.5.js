@@ -64,32 +64,32 @@ console.log('First Name: ' + firstName1);
 console.log('Last Name: '+ lastName1);
 console.log('Address: '+address1);
 console.log('Pay Rate:$'+ pay1.toFixed(1));
-console.log('Hire Date: '+ hire1.toLocaleDateString());
+console.log('Hire Date: '+ hire1.toLocaleDateString('en-US'));
 console.log("\n");
 
 console.log('First Name: ' + firstName2);
 console.log('Last Name: '+ lastName2);
 console.log('Address: '+address2);
 console.log('Pay Rate:$'+ pay2.toFixed(1));
-console.log('Hire Date: '+ hire2.toLocaleDateString());
+console.log('Hire Date: '+ hire2.toLocaleDateString('en-US'));
 console.log("\n");
 
 console.log('First Name: ' + firstName3);
 console.log('Last Name: '+ lastName3);
 console.log('Address: '+address3);
 console.log('Pay Rate:$'+ pay3.toFixed(1));
-console.log('Hire Date: '+ hire3.toLocaleDateString());
+console.log('Hire Date: '+ hire3.toLocaleDateString('en-US'));
 console.log("\n");
 
 console.log('First Name: ' + firstName4);
 console.log('Last Name: '+ lastName4);
 console.log('Address: '+address4);
 console.log('Pay Rate:$'+ pay4.toFixed(1));
-console.log('Hire Date: '+ hire4.toLocaleDateString());
+console.log('Hire Date: '+ hire4.toLocaleDateString('en-US'));
 console.log("\n");
 
 console.log('First Name: ' + firstName5);
 console.log('Last Name: '+ lastName5);
 console.log('Address: '+address5);
 console.log('Pay Rate:$'+ pay5.toFixed(1));
-console.log('Hire Date: '+ hire5.toLocaleDateString());
+console.log('Hire Date: '+ hire5.toLocaleDateString('en-US'));
