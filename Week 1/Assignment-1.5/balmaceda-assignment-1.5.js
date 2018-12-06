@@ -1,9 +1,13 @@
-/*******Assignment 1.5 *******
- * This assignment demonstrates the use of 
- * types,values and variables in an application 
- * that displays the information of 5 employees.
- * ************************/
-
+/*
+============================================
+; Title:  Assignment 1.5
+; Author: Griselda Balmaceda
+; Date:   4 December 2018
+; Description: This program demonstrates the
+;   use of JavaScript types, values, and 
+;   and variables in an application.
+;===========================================
+*/ 
  /*adding my information for this Assignment*/
 var  myName="Griselda Balmaceda";
 var assignment="Assignment 1.5";

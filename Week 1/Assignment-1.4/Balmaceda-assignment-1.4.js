@@ -1,3 +1,12 @@
+/* 
+Title: Assignment 1.4 Primitive Types
+Author: Professor Krasso
+Date: 4 December 2018
+Modified By: <Griselda Balmaceda>
+Description: This program demonstrates the use of JavaScript types, values, and
+; and variables in an application.
+*/
+
 /*creating variables*/
 var firstName="griselda";
 var lastName="balmaceda";
