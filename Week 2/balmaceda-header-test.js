@@ -7,6 +7,6 @@
 ;===========================================
 */
 
-const header = require('../header.js');
+const header = require('../balmaceda-header.js');
 
 console.log(header.display("Griselda", "Balmaceda", "Week 2"));
