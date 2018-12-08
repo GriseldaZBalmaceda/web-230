@@ -1,10 +1,10 @@
 /*
 ============================================
 ; Title:  Balmaceda-assignment-2.4
-; Author: Professor Krasso 
+; Author: Professor Krasso
 ; Date:   6 December 2018
 ; Modified By: Griselda Balmaceda
-; Description: 
+; Description:
 ;===========================================
 */
 
@@ -34,7 +34,7 @@ function myName(firstName, LastName) {
 
 
 
-// function dateWriter declaration 
+// function dateWriter declaration
 function dateWriter(year, day, month) {
   date = new Date(year, day, month);
   return date.toLocaleDateString('en-US');
@@ -56,7 +56,7 @@ function convertToFloat(string) {
 console.log('\n')
 console.log('Hello my name is ' + myName('Griselda', 'Balmaceda') + '!')
 console.log("Today's date is " + dateWriter(2018, 6, 12) + " and the current temperature is " + formatNumber(345.6578, 1) + " degrees.")
-console.log("I am " + convertToInt('21') + ' years old and my savings account goal is ' + convertToFloat('657.43') + "dollars")
+console.log("I am " + convertToInt('21') + ' years old and my savings account goal is ' + convertToFloat('657.43') + " dollars")
 
 /* a little testing magic*/
 
