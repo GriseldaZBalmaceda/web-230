@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  Assignment 5.2
+; Title:  Assignment 5.3
 ; Author: Griselda Balmaceda
 ; Date:   9 January 2019
 ; Description: Object Collections
@@ -9,7 +9,7 @@
 
 const header = require('../balmaceda-header.js');
 
-console.log(header.display("Griselda", "Balmaceda", "Assignment 5.2"));
+console.log(header.display("Griselda", "Balmaceda", "Assignment 5.3"));
 
 console.log('\n')
 
