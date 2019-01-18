@@ -3,7 +3,7 @@
 ; Title:  Assignment 6.3
 ; Author: Griselda Balmaceda
 ; Date:   18 January 2019
-; Description: Stringifying an object 
+; Description: creating nested object
 ;===========================================
 */
 
@@ -13,6 +13,7 @@ console.log(header.display("Griselda", "Balmaceda", "Assignment 6.4"));
 
 console.log('\n')
 
+// creating object with nested object
 var ticket = {
     id:1056,
     name:"Ticket",
@@ -27,4 +28,5 @@ var ticket = {
     }
 }
 
+//outputting nested object property using dot notation.
 console.log(ticket.name +" " + ticket.id + " was created on " + ticket.dateCreated + " and assigned to " + ticket.person.firstName + " " + ticket.person.lastName + " (" + ticket.person.jobTitle + ").")
