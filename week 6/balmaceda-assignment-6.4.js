@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  Assignment 6.3
+; Title:  Assignment 6.4
 ; Author: Griselda Balmaceda
 ; Date:   18 January 2019
 ; Description: creating nested object
