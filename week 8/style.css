@@ -1,0 +1,25 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1{
+    margin: 0;
+
+}
+.list{
+    position: absolute;
+
+}
+#fruits{
+    width:15%;
+    margin:auto;
+}
+.topbar{
+    background-color: pink;
+    height: 50px;
+}
+ul{
+    list-style: none;
+    margin-top: 20px;
+    padding: 10px;
+  }

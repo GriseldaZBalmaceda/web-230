@@ -1,0 +1,81 @@
+<!--============================================
+; Title:  Assignment 8.2
+; Author: Griselda Balmaceda
+; Date:   1 Febuary 2019
+; Description: Practing jQuery
+;===========================================-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style-8.3.css"/>
+</head>
+<body>  
+       <div class="topbar"><h1>Assinment 8.3</h1></div>
+
+       <!--wrapped the entire content in a content class to provide the margin-left:20px-->
+<div class="content">
+ 
+
+<div class="prettyText">
+     <p style="display: visible">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+     <button class="button">Toggle</button>
+</div>
+
+        
+<table>
+        <tr>
+            <td><a href="#" class="fruitId">1</a></td>
+            <td>Apple</td>
+        </tr>
+
+        <tr>
+            <td><a href="#" class="fruitId">2</a></td>
+            <td>Banana</td>
+        </tr>
+
+        <tr>
+            <td><a href="#" class="fruitId">3</a></td>
+            <td>Orange</td>
+        </tr>
+
+        <tr>
+                <td><a href="#" class="fruitId">2</a></td>
+                <td>Kiwi</td>
+         </tr>
+
+        <tr>
+            <td><a href="#" class="fruitId">3</a></td>
+             <td>Grapes</td>
+        </tr>
+    </table> 
+
+ 
+</div>
+
+
+
+
+
+
+
+<script>
+    $('.button').click(function(){
+      $('p').toggle('slow')
+    });
+$('.fruitId').click(function(event){
+    event.preventDefault();
+    var fruitId = $(this).text();
+    var fruitType = $(this).closest("td").next().text();
+    alert("{fruitId:" +fruitId+ ", fruitType: " + fruitType + "}")
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!--============================================
+; Title:  Assignment 8.2
+; Author: Griselda Balmaceda
+; Date:   1 Febuary 2019
+; Description: Dynamic Html
+;===========================================-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>  
+
+    <!--created divs that will contain the top bar and fruits content-->
+    <div class="topbar"><h1>Fruit</h1></div>
+    <div id="fruits"></div>   
+
+<script>
+    //created the fruit array 
+var fruit=[
+    {
+        id:1234,
+        type:'apple',
+    },
+    {
+        id:5678,
+        type:'banana',
+    },
+    {
+      id:9012,
+      type:'pear',
+    },
+    {
+        id:3456,
+        type:'kiwi'
+    },
+    {
+        id:7891,
+        type:'grape'
+    }
+];
+
+//identified the start of the table and iterated over the fruit array, which populated the table 
+var table= "<ul>"
+for (var i=0;i<fruit.length;i++){
+    table += '<li>' + fruit[i].id + ' ' + fruit[i].type + '</i>';
+}
+//ended the table
+table += '</ul>';
+//got the fruit id and inserted the table data.
+document.getElementById('fruits').innerHTML=table;
+</script>
+
+</body>
+</html>
