@@ -32,7 +32,7 @@
         this.lastName = lastName;
         this.title = title;
   }
-
+//fixed my array needed to create via constructor
 var employees = [
     new Employee (0666,'Thomas','Edison','Software Engineer'),
     new Employee (2334,'Benjamin','Franklin','Programmer'),
@@ -40,7 +40,7 @@ var employees = [
     new Employee (5456,'Charles','Babbage','Product Manager'),
     new Employee (4365,'Alexander','Bell','Business Analyst')
       ];
-
+//outputing the table onto the element id emps
       var output = "<table>";
       output += "<th>Id</th>"; 
       output += "<th>Title</th>";
@@ -58,6 +58,19 @@ var employees = [
       document.getElementById("emps").innerHTML = output;   
      
 
+//function passes the tr data
+      
+        $(function () {
+        $("table tr").click(function () {
+        event.preventDefault();
+      var  i= $(this).find('td:first').html();
+      console.log(i)
+      getEmployee(i);
+   
+    })
+  });
+     
+//the get employee is to recieve the id and find it in the employees array
       function getEmployee(employeeId) {
         id=this.employeeId
         console.log(id);
@@ -71,21 +84,6 @@ var employees = [
     // }
   }
       
-
-      
-        $(function () {
-        $("table tr").click(function () {
-        event.preventDefault();
-      var  i= $(this).find('td:first').html();
-      console.log(i)
-      getEmployee(i);
-   
-    })
-  });
-     
-
-
-  //creating the table that will hold the employee information
 
 
      
