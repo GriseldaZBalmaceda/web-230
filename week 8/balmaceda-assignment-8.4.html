@@ -25,40 +25,7 @@
   // jQuery onClick event
   // Don't remove this, just add your code to the body of the event (curly braces)
 
-  //creating the employee constructor
-var employees = [
-        {
-          id: 1,
-          firstName: "Alexa",
-          lastName: "Williams",
-          title: 'Store Manager'
-        },
-        {
-          id: 2,
-          firstName: "Billy",
-          lastName: "Jones",
-          title: 'Cashier'
-        },
-        {
-          id: 3,
-          firstName: "Carly",
-          lastName: "Carlisle",
-          title: 'Bagger'
-        },
-        {
-          id: 4,
-          firstName: "Darol",
-          lastName: "Cole",
-          title: 'Janitor'
-        },
-        {
-          id: 5,
-          firstName: "Johnny",
-          lastName: "Emerald",
-          title: 'Store Owner'
-        }
-      ];
-
+  //creating the employee constructor  
   function Employee(id, firstName, lastName, title) {
         this.id = id;
         this.firstName = firstName;
@@ -66,14 +33,19 @@ var employees = [
         this.title = title;
   }
 
-  
- 
+var employees = [
+    new Employee (0666,'Thomas','Edison','Software Engineer'),
+    new Employee (2334,'Benjamin','Franklin','Programmer'),
+    new Employee (4535,'Nikola','Tesla','Project Manajer'),
+    new Employee (5456,'Charles','Babbage','Product Manager'),
+    new Employee (4365,'Alexander','Bell','Business Analyst')
+      ];
+
       var output = "<table>";
       output += "<th>Id</th>"; 
       output += "<th>Title</th>";
       output += "<th>First Name</th>";
       output += "<th>Last Name</th>";
-    
       for (let i = 0; i < employees.length; i++) {
         console.log(employees[i].id, employees[i].firstName, employees[i].lastName, employees[i].title);
         output += "<tr><td>" + employees[i].id + "</td>";
@@ -82,21 +54,32 @@ var employees = [
         output += "<td>" + employees[i].lastName + "</td></tr>"; 
       };
       output += "</table>";
-     document.getElementById("emps").innerHTML = output;   
+
+      document.getElementById("emps").innerHTML = output;   
      
-     function getEmployee(id) {
-       
-        alert(this.id, this.firstName, this.lastName, this.title);
-      }
+
+      function getEmployee(employeeId) {
+        id=this.employeeId
+        console.log(id);
+        // for (var i=0; i < employees.length; i++) {
+        // if (employees[i].id=== employeeId) {
+        //   console.log('hello');
+        // }
+        // else{
+        //   console.log('no match')
+        // }
+    // }
+  }
+      
 
       
-      $(function () {
-    $("table tr").click(function () {
-    event.preventDefault();
-    var i = $('tr').find('td:first').html();
-    console.log(i);
-    getEmployee(i);
-     
+        $(function () {
+        $("table tr").click(function () {
+        event.preventDefault();
+      var  i= $(this).find('td:first').html();
+      console.log(i)
+      getEmployee(i);
+   
     })
   });
      
